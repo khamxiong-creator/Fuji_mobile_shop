@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th Lao Eng">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fuji Mobile Shop<br>ຮ້ານແປງໂທລະສັບແລະຂາຍອຸປະກອນເສີມ</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+      {
+      background: linear-gradient(to bottom, #f0f4f8, #dfefff);
+      font-family: 'Noto Sans Lao', sans-serif;
+    }
+
+    header {
+      background-color: #0066cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ຍິນດີຕ້ອນຮັບທຸກຄົນເຂົ້າໃຊ້ບໍລິການ</h1>
+  </header>
+
+  <nav style="background-color: #d21972; padding: 10px; text-align: center;">
+    <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">ໜ້າຫຼັກ</a>
+    <a href="about.html" style="color: white; margin: 0 15px; text-decoration: none;">ກ່ຽວກັບຮ້ານ</a>
+    <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none;">ຕິດຕໍ່ຮ້ານ</a>
+    <a href="products.html" style="color: white; margin: 0 15px; text-decoration: none;">ສັ່ງຊື້ສິນຄ້າ</a>
+  </nav>
+
+  <br><br><br>
+  <h3 style="text-align: center;">ສະບາຍດີລູກຄ້າ ພວກເຮົາຂໍຂອບໃຈລູກຄ້າທີເຂົ້າມາເລືອກຊື້ສິນຄ້າໃນເວັບຂອງພວກເຮົາ ລູກຄ້າສົນໃຈສິນຄ້າໂຕໃດແມ່ນແນະນຳໃຫ້
+  ແຄປຫນ້າຈໍສິນຄ້າແລະທັກຫາພວກເຮົາທາງ WhatsApp ເລີຍເດີ້ເພື່ອຄວາມສະດວກແລະວ່ອງໄວ. ຂໍໂທດຫລາຍຫລາຍໃນຄວາມບໍ່ສະດວກ ແລະ ພວກເຮົາຈະພະຍາຍາມປັບປຸງເວັບໃຫ້ທັນສະໄຫມກວ່າ
+ເກົ່າເດີ້ລູກຄ້າ. </h3>
+
+  <h2> &nbsp;&nbsp;&nbsp;ລາຍການສິນຄ້າ</h2>
+
+  <div class="product-card">
+    &nbsp;&nbsp;&nbsp;<img src="Img/photo12.jpg" alt="ໂທລະສັບ Vivo Y20">
+    <h3>&nbsp;&nbsp;&nbsp;ໂທລະສັບ Vivo Y20</h3>
+    <p>&nbsp;&nbsp;&nbsp;ລາຄາ: 900,000 ກີບ</p>
+    <button onclick="addToCart('ໂທລະສັບ Vivo Y20', 900000)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+  <div class="product-card">
+    <img src="Img/photo13.jpg" alt="ໂທລະສັບ Iphone 7">
+    <h3>ໂທລະສັບ Iphone 7</h3>
+    <p>ລາຄາ: 1,500,000 ກີບ</p>
+    <button onclick="addToCart('ໂທລະສັບ Iphone 7', 1500000)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+  <div class="product-card">
+    <img src="Img/photo14.jpeg" alt="ສິນຄ້າວ່າງ">
+    <h3>ສິນຄ້າວ່າງ</h3>
+    <p>ລາຄາ: 0 ກີບ</p>
+    <button onclick="addToCart('ສິນຄ້າວ່າງ, 0)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+  <div class="product-card">
+    <img src="Img/photo14.jpeg" alt="ສິນຄ້າວ່າງ">
+    <h3>ສິນຄ້າວ່າງ</h3>
+    <p>ລາຄາ: 0 ກີບ</p>
+    <button onclick="addToCart('ສິນຄ້າວ່າງ, 0)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+ <div class="product-card">
+    <img src="Img/photo14.jpeg" alt="ສິນຄ້າວ່າງ">
+    <h3>ສິນຄ້າວ່າງ</h3>
+    <p>ລາຄາ: 0 ກີບ</p>
+    <button onclick="addToCart('ສິນຄ້າວ່າງ, 0)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+  <div class="product-card">
+    <img src="Img/photo14.jpeg" alt="ສິນຄ້າວ່າງ">
+    <h3>ສິນຄ້າວ່າງ</h3>
+    <p>ລາຄາ: 0 ກີບ</p>
+    <button onclick="addToCart('ສິນຄ້າວ່າງ, 0)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+   <div class="product-card">
+    <img src="Img/photo14.jpeg" alt="ສິນຄ້າວ່າງ">
+    <h3>ສິນຄ້າວ່າງ</h3>
+    <p>ລາຄາ: 0 ກີບ</p>
+    <button onclick="addToCart('ສິນຄ້າວ່າງ, 0)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+  <div class="product-card">
+    <img src="Img/photo14.jpeg" alt="ສິນຄ້າວ່າງ">
+    <h3>ສິນຄ້າວ່າງ</h3>
+    <p>ລາຄາ: 0 ກີບ</p>
+    <button onclick="addToCart('ສິນຄ້າວ່າງ, 0)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+   <div class="product-card">
+    <img src="Img/photo14.jpeg" alt="ສິນຄ້າວ່າງ">
+    <h3>ສິນຄ້າວ່າງ</h3>
+    <p>ລາຄາ: 0 ກີບ</p>
+    <button onclick="addToCart('ສິນຄ້າວ່າງ, 0)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+  <div class="product-card">
+    <img src="Img/photo14.jpeg" alt="ສິນຄ້າວ່າງ">
+    <h3>ສິນຄ້າວ່າງ</h3>
+    <p>ລາຄາ: 0 ກີບ</p>
+    <button onclick="addToCart('ສິນຄ້າວ່າງ, 0)">ກົດສັ່ງຊື້ເລີຍ</button>
+  </div>
+
+  <hr>
+  <h3>&nbsp;&nbsp;&nbsp;ລາຍການສິນຄ້າທີຊື້ທັ້ງຫມົດ</h3>
+  <ul id="cart-list"></ul>
+  <p>&nbsp;&nbsp;&nbsp;ລວມລາຄາທັ້ງຫມົດ: <span id="total">0</span> ກີບ</p>
+
+  <script>
+    let cart = [];
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      renderCart();
+    }
+
+    function renderCart() {
+      let list = document.getElementById('cart-list');
+      let total = 0;
+      list.innerHTML = '';
+      cart.forEach(item => {
+        total += item.price;
+        let li = document.createElement('li');
+        li.textContent = `${item.name} - ${item.price.toLocaleString()} ກີບ`;
+        list.appendChild(li);
+      });
+      document.getElementById('total').textContent = total.toLocaleString();
+    }
+  </script>
+
+<br><br><br><br>
+
+
+  <footer style="background-color: #1565c0; color: white; padding: 15px; text-align: center; margin-top: 40px;">
+    © 2025 ເວັບໄຊຮ້ານຄ້າ | ອອກແບບໂດຍ Fuji Team
+  </footer>
+
+</body>
+
+</html>

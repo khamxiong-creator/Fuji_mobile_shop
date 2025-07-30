@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="th Lao Eng">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <title>ຕິດຕໍ່ຝ່າຍບໍລິການ</title>
+    </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+
+    <style>
+        body body header {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+            {
+            background: linear-gradient(to bottom, #f0f4f8, #dfefff);
+            font-family: 'Noto Sans Lao', sans-serif;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #003366;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+            {
+            font-family: 'Noto Sans Lao', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #1c8f57;
+        }
+
+        img.qr {
+            width: 200px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+
+        p.description {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #1da851;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>ຍິນດີຕ້ອນຮັບທຸກຄົນເຂົ້າໃຊ້ບໍລິການ</h2>
+    </header>
+
+   <nav style="background-color: #d21972; padding: 10px; text-align: center;">
+        <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">ໜ້າຫຼັກ</a>
+        <a href="about.html" style="color: white; margin: 0 15px; text-decoration: none;">ກ່ຽວກັບຮ້ານ</a>
+        <a href="contact.html" style="color: white; margin: 0 15px; text-decoration: none;">ຕິດຕໍ່ຮ້ານ</a>
+        <a href="products.html" style="color: white; margin: 0 15px; text-decoration: none;">ສັ່ງຊື້ສິນຄ້າ</a>
+    </nav>
+
+
+
+    <div class="container">
+        <h1>ຕິດຕໍ່ຝ່າຍບໍລິການລູກຄ້າ</h1>
+
+        <img src="Img/WhatsApp .jpg" alt="QR WhatsApp" class="qr">
+
+        <p class="description">ກະລຸນາສແກນ QR Code ເພື່ອຕິດຕໍ່ທາງ WhatsApp ກັບພວກເຮົາ</p>
+
+        <form onsubmit="return sendMessage()">
+            <input type="text" id="name" placeholder="ຊື່ລູກຄ້າ" required>
+            <input type="tel" id="phone" placeholder="ເບີໂທລູກຄ້າ" required>
+            <input type="text" id="model" placeholder="ລຸ້ນໂທລະສັບ" required>
+            <textarea id="problem" placeholder="ລາຍລະອຽດອາການທີ່ຈະສ່ງຊ່ອມ" rows="4" required></textarea>
+            <button type="submit">ສົ່ງຂໍ້ມູນ</button>
+        </form>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const model = document.getElementById('model').value;
+            const problem = document.getElementById('problem').value;
+
+            const message = `ຊື່: ${name}%0Aເບີໂທ: ${phone}%0Aລຸ້ນໂທ: ${model}%0Aອາການ: ${problem}`;
+            const whatsappNumber = "YOUR_PHONE_NUMBER"; // ❗ ใส่เบอร์ WhatsApp ของคุณที่นี่ (ไม่ใส่ + หรือ -)
+
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+            return false;
+        }
+    </script>
+
+
+
+
+
+
+
+
+    <footer style="background-color: #1565c0; color: white; padding: 15px; text-align: center; margin-top: 40px;">
+        © 2025 ເວັບໄຊຮ້ານຄ້າ | ອອກແບບໂດຍ Fuji Team
+    </footer>
+
+</body>
+
+</html>

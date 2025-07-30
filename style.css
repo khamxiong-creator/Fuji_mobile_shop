@@ -1,0 +1,19 @@
+.image-list {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.image-item {
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.image-item img {
+  width: 200px; /* กำหนดขนาดรูปภาพ */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
